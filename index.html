@@ -1,2 +1,32 @@
 <h1>DEVOPS</h1>
 <p>CICD</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .color-change {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Random HTML Page!</h1>
+    <p id="text">Click the button to change my color!</p>
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+        function changeColor() {
+            const text = document.getElementById('text');
+            text.classList.toggle('color-change');
+        }
+    </script>
+</body>
+</html>
